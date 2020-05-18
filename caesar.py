@@ -13,7 +13,7 @@ def encrypt(text,key):
             encrypt_item = chr((ord(item)-ord('0')+key)%10+ord('0'))
             encrypt_list.append(encrypt_item)
         
-    print(encrypt_list)
+    
     encrypt_str="".join([str(i) for i in encrypt_list])
     
     
